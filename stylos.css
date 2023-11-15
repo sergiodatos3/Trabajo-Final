@@ -1,0 +1,236 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background-image: url(img/fondo.jpg);
+    background-size: cover; /*adapta la imagen al tamaño del contenedor */
+    background-position: center center;
+    color: #fff;
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 10px;
+}
+/* menu */
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    /* flex-direction:row; */
+    
+    margin-left:40px;
+    background-color: #940253;
+    padding-right:  100px;
+    padding-left: 100px;
+    border-radius: 20px;
+    transform: translateX(120px);/* mueve los elementos de derecha a izquierda */
+    z-index: 99;/* En otras palabras, z-index determina el orden en el que se apilan los elementos en el eje Z, que es el eje que se extiende desde la pantalla hacia el usuario. */
+    /* display: none; */
+}
+.nav a{
+    display:inline;
+    margin-right: 20px;  /* espacio entre elementos de linea */
+    color: #fff;
+    text-decoration:none; /* elimene subrayado de enlaces
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;/* agregue sombras a los elementos */
+
+    /* foto */
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 95px;
+    border-radius: 40%;
+    border: 5px solid #940253;
+    position: absolute;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-25px);/* permite mover el elemento a la izquierda o a la derecha */
+}
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 1.5rem;
+}
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.sobremi .contenido-seccion .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #940253;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SECCION HABILIDADES */
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background-color: #650;
+    background-position: center center;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.habilidades{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.titulos{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background-color: #666;
+    background-position: center center;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#img {
+    display: none;
+}
+
+#img2 {
+    display: none;
+}
+.certificados {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background-color: #666;
+    background-position: center center;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: #940253;
+}
