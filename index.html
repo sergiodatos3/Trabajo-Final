@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylos.css">
     <title>CV SERGIO ACOSTA</title>
@@ -14,16 +15,16 @@
     <section class="inicio" id="inicio">
         <div class="contenido-seccion">
             <header>
-                <div class="nav-bar" onclick="mostrarOcultarMenu()"> <!--onclick="mostrarOcultarMenu()"-->
-                    <!-- <i class="fa-solid fa-bars"></i> -->
+                <div class="nav-bar" onclick="mostrarOcultarMenu()"> 
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="barra">
-                    <nav id="nav" class="nav">
+                    <nav id="nav" class="nav" >
                         <a href="#inicio" class="flot"> Inicio</a>
                         <a href="#sobremi" class="flot">Sobre mí</a>
                         <a href="#habilidades" class="flot">Habilidades</a>
                         <a href="#titulos" class="flot">titulos</a>
-                        <a href="#titulos" class="flot">Certificados</a>
+                        <a href="#certificados" class="flot">Certificados</a>
                         <a href="#contacto" class="flot">Contacto</a>
                     </nav>
                 </div>
@@ -34,7 +35,7 @@
                 <div class="redes">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i>
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a  target="_blank"  href="http://linkedin.com/in/SergioLeonardoAcosta"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="foto">
@@ -73,7 +74,9 @@
     </section>
 
     <!-- SECCION HABILIDADES -->
-    <section class="habilidades" id="habilidades">
+    <section class="habilidades" id="habilidades" >
+         
+        
             <h2 class="titulo-seccion">Mis habilidades</h2>
             <h3>Me especializo en</h3>
                 <div class="columa">
@@ -83,8 +86,7 @@
                         <li>Introducción a la Programación</li>
                         <li>Redes Informáticas..</li>
                     </ul>
-               </div>
-
+              </div>
 </section> 
      <!-- TITULOS -->
      <section class="titulos" id="titulos">
@@ -97,28 +99,25 @@
                 </ul>
            </div>
 </section> 
-<article class="certificados">
+<article id="certificados">
     <h2>Certificados</h2>
     <button id="certificadoJS" onclick="mostrar()">JavaScript</button>
     <div id="img">
-        <img src="img/cert-JS.png" alt="certificadoJS" width="80%">
-        <button id="certificadoJS" onclick="ocultar()">Ocultar imagen</button>
+        <img src="img/cert-JS.png" alt="certificadoJS" width="70%"> <br></br>
+        <button id="certificadoJS" onclick="ocultar()">Ocultar imagen</button> <br></br>
     </div>
 
-    <button id="certificadoJS" onclick="mostrar2()">Ingles Elemental</button>
+    <button id="certificadoJS" onclick="mostrar2()">Ingles Elemental</button> <br></br>
     <div id="img2">
-        <img src="img/ingles.png" alt="certificadoIngles" width="80%">
-        <button id="certificadoJS" onclick="ocultar2()">Ocultar imagen</button>
-
+        <img src="img/ingles.png" alt="certificadoIngles" width="70%"> <br></br>
+        <button id="certificadoJS" onclick="ocultar2()">Ocultar imagen</button> 
     </div>
-</article>
 
     <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
+    <footer class="contacto" id="contacto">
         <div class="contenido-seccion">
-            <h2 class="titulo-seccion">Contacto</h2>
-            <h3>Ponte en contacto ahora mismo!</h3>
-
+            <h2 class="titulo-seccion">Contactame</h2>
+            
             <div class="fila">
                 <div class="col">
                     <h2>
@@ -140,10 +139,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- <script src="applicacion.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 <script src="app.js"> </script>
+
 </body>
 </html>
