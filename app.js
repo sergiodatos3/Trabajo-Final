@@ -4,6 +4,7 @@ document.getElementById('img').style.display = 'block'
 
 function ocultar() {
     document.getElementById('img').style.display = 'none'
+    
 }
 
 function mostrar2() {
@@ -13,6 +14,13 @@ function mostrar2() {
     function ocultar2() {
         document.getElementById('img2').style.display = 'none'
     }
+    function mostrar3() {
+        document.getElementById('img3').style.display = 'block'
+        }
+        
+        function ocultar3() {
+            document.getElementById('img3').style.display = 'none'
+        }
 
 //menu lateral
 var menu_visible = false;

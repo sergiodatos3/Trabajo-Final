@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -23,16 +24,16 @@ html{
     padding: 0 10px;
 }
 .inicio .contenido-seccion header{
-    padding: 30px;
+    padding: 20px;
 }
 /* menu */
 
  .nav{
    
     position: fixed;
-    margin-left:60px;
+    margin-left:55px;
     background-color: #940253;
-    padding:  15px;
+    padding:  5px;
     border-radius: 10px;
     text-align: left;
     /* z-index: 99;En otras palabras, z-index determina el orden en el que se apilan los elementos en el eje Z, que es el eje que se extiende desde la pantalla hacia el usuario. */
@@ -40,11 +41,10 @@ html{
 }
 .inicio .contenido-seccion header nav a {
     display:block;
-    color: #e5f476;
+    color: #f7f7f4;
     text-decoration:none; 
-    margin-bottom: 10px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     
 }
 
@@ -86,7 +86,7 @@ html{
     text-decoration: none;
     background-color: #000;
     color: #940253;
-    border: 1px solid #940253;
+    border: 0,5px solid #940253;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -98,7 +98,7 @@ html{
     color: #fff;
     background-color: #940253;
     box-shadow: 0 0 20px #fff;/* agregue sombras a los elementos */
-
+    
     /* foto */
 }
 .inicio .contenido-seccion .foto{
@@ -107,15 +107,14 @@ html{
 .inicio .contenido-seccion .foto img{
     max-width: 95px;
     border-radius: 40%;
-    border: 5px solid #940253;
+    border: 3px solid #940253;
     position: absolute;
     left: 50%;
-    top: -150px;
+    top: -145px;
     transform: translateX(-57px);/* permite mover el elemento a la izquierda o a la derecha */
 }
 /* estilos generales */
 .titulo-seccion{
-    font-family: "Yellowtail";
     font-size: 1.5 rem;
 }
 /* SECCION SOBRE MI */
@@ -136,7 +135,7 @@ html{
 .sobremi .contenido-seccion .especial{
     color: #940253;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 1px;
 }
 .sobremi .contenido-seccion p{
     max-width: 700px;
@@ -145,7 +144,7 @@ html{
 }
 .sobremi .contenido-seccion .fila{
     display: flex;
-    margin-top: 30px;
+    margin-top: 1px;
     justify-content: space-between;
 }
 .sobremi .contenido-seccion .fila .col{
@@ -167,33 +166,28 @@ html{
 }
 /* SECCION HABILIDADES */
 .habilidades{
-    /* background-image: url("img/fondo1.jpg.webp"); */
-    /* opacity: 50%; */
     padding: 80px 0 100px 0;
-    border-color: #000;
     text-align: center;
-    background-color: rgb(7, 6, 1);
+    background-image: url(img/habilidades2.jpeg);
     background-position: center center;
+    background-size: cover; /*adapta la imagen al tamaño del contenedor */
     color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 1px;
 
 }
 .habilidades{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1px;
+   
+    
 }
 .habilidades .contenido-seccion{
     max-width: 1000px;
     margin: auto;
     padding: 0 10px;
-}
-.columa {
-    background-color: #000;
-
-    
 }
 .titulos{
     padding: 80px 0 100px 0;
@@ -201,13 +195,13 @@ html{
     background-color: #666;
     background-position: center center;
     color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .titulo-seccion{
-    color: #940253;
+    color: #f5f0ef;
 }
 #img {
     display: none;
@@ -217,16 +211,26 @@ html{
 #img2 {
     display: none;
 }
+#img3 {
+    display: none;
+}
+/* CERTIFICADOS */
 #certificados {
-    padding: 30px 0 30px 0;
+    
+    padding: 80px 0 100px 0;
     text-align: center;
-    background-color: #666;
-    background-position: center center;
-    color: #bd3c3c;
-    margin-left: 10px;
-    margin-right: 10px;
+  background-color: #000;
+    color: #efe9e9;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1px;
     margin-bottom: 1px;
+}
+#certificadoJS {
+    color: #fff;
+    cursor:pointer;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;/* agregue sombras a los elementos */
 }
 
 .habilidades .contenido-seccion{
@@ -235,28 +239,79 @@ html{
     padding: 0 10px;
 }
 /* SECCION CONTACTO */
+footer{
+    margin-bottom: 1px;
+}
 .contacto{
     background-color: #202020;
-    padding: 50px 0 100px 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 0px 0 00px 0;
     color: #e6e6e6;
     text-align: center;
 }
 .contacto .contenido-seccion{
     max-width: 1000px;
-    margin: auto;
+margin-bottom: 1px;
     padding: 0 10px;
 }
 .contacto .contenido-seccion h3{
-    text-transform: uppercase;
-    font-size: 30px;
+    text-transform:none;
+    font-size: 15px;
 }
 .contacto .contenido-seccion .fila{
     display: flex;
     justify-content: space-around;
 }
 .contacto .contenido-seccion .fila .col{
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .contacto .contenido-seccion .fila .col h2{
     color: #940253;
+     margin-top: 1px;
+}
+.derechoreservado {
+    display: block;
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .habilidades .contenido-seccion .fila{
+        display: block;
+    }
+    .habilidades .contenido-seccion .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .habilidades .contenido-seccion .fila .col .cont-barra{
+        justify-content: center;
+    }
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
 }
